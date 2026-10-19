@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Практическая работа CSS — студент</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="header-inner">
+      <img class="brand-mark" src="study-mark.svg" alt="Знак учебного сайта">
+      <div>
+        <p class="brand-note">Практическая работа</p>
+        <p class="brand-name">Освоение навыков использования CSS</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="main-nav" aria-label="Главное меню">
+    <ul>
+      <li><a class="active" href="index.html">Главная</a></li>
+      <li><a href="index01.html">Расписание</a></li>
+      <li><a href="index02.html">Страница CSS</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-wrap">
+    <section class="hero" aria-labelledby="welcome-title">
+      <div>
+        <p class="eyebrow">Страница 1</p>
+        <h1 id="welcome-title">Добро пожаловать на учебный сайт</h1>
+        <p class="lead">Здесь собраны результаты практической работы: простая HTML-страница, расписание с таблицами и отдельная страница, оформленная с помощью CSS.</p>
+        <div class="button-row">
+          <a class="button" href="index01.html">Открыть расписание</a>
+          <a class="button outline" href="index02.html">Посмотреть стили CSS</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="study-mark.svg" alt="Открытая книга — символ обучения">
+      </div>
+    </section>
+
+    <section class="content-card two-column" aria-labelledby="tags-title">
+      <div>
+        <p class="eyebrow">Основы HTML</p>
+        <h2 id="tags-title">Теги, использованные в работе</h2>
+        <ul class="tag-list">
+          <li><code>&lt;title&gt;</code> задаёт название страницы на вкладке браузера.</li>
+          <li><code>&lt;body&gt;</code> содержит видимую часть веб-страницы.</li>
+          <li><code>&lt;h1&gt;</code> определяет заголовок первого уровня.</li>
+          <li><code>&lt;p&gt;</code> создаёт абзац текста.</li>
+          <li><code>&lt;img&gt;</code> добавляет изображение на страницу.</li>
+          <li><code>&lt;a&gt;</code> создаёт ссылку на другую страницу или ресурс.</li>
+          <li><code>&lt;ul&gt;</code> и <code>&lt;li&gt;</code> формируют маркированный список.</li>
+          <li><code>&lt;table&gt;</code> выводит табличные данные.</li>
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow">Цель работы</p>
+        <h2>Что выполнено</h2>
+        <ul class="check-list">
+          <li>Созданы три связанные HTML-страницы.</li>
+          <li>Все файлы и изображения находятся в одной папке проекта.</li>
+          <li>Подобрана единая деловая цветовая палитра: тёмно-синий, бирюзовый и золотистый акценты.</li>
+          <li>Подключён внешний файл стилей <strong>style.css</strong>.</li>
+          <li>В таблицах применены объединения ячеек <strong>colspan</strong> и <strong>rowspan</strong>.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Практическая работа по CSS · единый стиль трёх страниц</p>
+    <a class="back-top" href="#top">Наверх ↑</a>
+  </footer>
+</body>
+</html>

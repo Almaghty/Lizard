@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Расписание занятий — студент</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="header-inner">
+      <img class="brand-mark" src="study-mark.svg" alt="Знак учебного сайта">
+      <div>
+        <p class="brand-note">Практическая работа</p>
+        <p class="brand-name">Расписание учебной недели</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="main-nav" aria-label="Главное меню">
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a class="active" href="index01.html">Расписание</a></li>
+      <li><a href="index02.html">Страница CSS</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-wrap">
+    <!-- Изменено: добавлены собственные данные, навигация по дням и единый деловой стиль. -->
+    <section class="page-heading" aria-labelledby="schedule-title">
+      <p class="eyebrow">Страница 2</p>
+      <h1 id="schedule-title">Расписание занятий на неделю</h1>
+      <p>Начало первой пары — в 9:00. Данные в таблицах заполнены произвольно для демонстрации структуры расписания.</p>
+    </section>
+
+    <!-- Изменено: по условию к второй странице добавлена тематическая иллюстрация. -->
+    <section class="schedule-intro content-card" aria-label="Иллюстрация и переходы к дням">
+      <div>
+        <h2>Планируем неделю эффективно</h2>
+        <p>Ссылки ведут к расписанию понедельника, вторника и среды. В каждой таблице показаны номер пары, время и дисциплина.</p>
+        <ul class="day-links">
+          <li><a href="#monday">Понедельник</a></li>
+          <li><a href="#tuesday">Вторник</a></li>
+          <li><a href="#wednesday">Среда</a></li>
+        </ul>
+      </div>
+      <figure>
+        <img src="schedule-illustration.png" alt="Планер, карандаш и учебные принадлежности на столе">
+        <figcaption>Иллюстрация к расписанию занятий</figcaption>
+      </figure>
+    </section>
+
+    <!-- Изменено: создана собственная таблица понедельника с объединением ячеек rowspan. -->
+    <section class="schedule-card" id="monday" aria-labelledby="monday-title">
+      <h2 id="monday-title">Понедельник</h2>
+      <table>
+        <thead><tr><th>№ пары</th><th>Время</th><th>Предмет</th></tr></thead>
+        <tbody>
+          <tr><td class="lesson-number" rowspan="2">1</td><td>09:00–09:45</td><td>Основы веб-разработки</td></tr>
+          <tr><td>09:55–10:40</td><td>Основы веб-разработки</td></tr>
+          <tr><td class="lesson-number" rowspan="2">2</td><td>10:55–11:40</td><td>Информатика</td></tr>
+          <tr><td>11:50–12:35</td><td>Информатика</td></tr>
+          <tr><td class="lesson-number" rowspan="2">3</td><td>12:50–13:35</td><td>Физическая культура</td></tr>
+          <tr><td>13:45–14:30</td><td>Физическая культура</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Изменено: заполнены произвольные дисциплины для вторника. -->
+    <section class="schedule-card" id="tuesday" aria-labelledby="tuesday-title">
+      <h2 id="tuesday-title">Вторник</h2>
+      <table>
+        <thead><tr><th>№ пары</th><th>Время</th><th>Предмет</th></tr></thead>
+        <tbody>
+          <tr><td class="lesson-number" rowspan="2">1</td><td>09:00–09:45</td><td>Математика</td></tr>
+          <tr><td>09:55–10:40</td><td>Математика</td></tr>
+          <tr><td class="lesson-number" rowspan="2">2</td><td>10:55–11:40</td><td>Русский язык</td></tr>
+          <tr><td>11:50–12:35</td><td>Русский язык</td></tr>
+          <tr><td class="lesson-number" rowspan="2">3</td><td>12:50–13:35</td><td>Проектная деятельность</td></tr>
+          <tr><td>13:45–14:30</td><td>Проектная деятельность</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Изменено: добавлен отдельный день с заголовком таблицы, объединяющим три столбца. -->
+    <section class="schedule-card" id="wednesday" aria-labelledby="wednesday-title">
+      <h2 id="wednesday-title">Среда</h2>
+      <table>
+        <thead>
+          <tr><th colspan="3">Учебные занятия</th></tr>
+          <tr><th>№ пары</th><th>Время</th><th>Предмет</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="lesson-number" rowspan="2">1</td><td>09:00–09:45</td><td>Иностранный язык</td></tr>
+          <tr><td>09:55–10:40</td><td>Иностранный язык</td></tr>
+          <tr><td class="lesson-number" rowspan="2">2</td><td>10:55–11:40</td><td>Обществознание</td></tr>
+          <tr><td>11:50–12:35</td><td>Обществознание</td></tr>
+          <tr><td class="lesson-number" rowspan="2">3</td><td>12:50–13:35</td><td>Компьютерная графика</td></tr>
+          <tr><td>13:45–14:30</td><td>Компьютерная графика</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Расписание занятий · вторая страница практической работы</p>
+    <a class="back-top" href="#top">Наверх ↑</a>
+  </footer>
+</body>
+</html>
